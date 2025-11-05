@@ -1,0 +1,729 @@
+/* ClipGen Page - Video Clip Theme with Purple/Pink Gradient */
+
+.clipgen-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a0b2e 0%, #2d1b4e 50%, #1e0836 100%);
+  color: white;
+  padding-bottom: 4rem;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Animated Background */
+.clipgen-bg-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.clipgen-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+  animation: float 20s infinite ease-in-out;
+}
+
+.clipgen-orb-1 {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+  top: -100px;
+  left: -100px;
+  animation-delay: 0s;
+}
+
+.clipgen-orb-2 {
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);
+  bottom: -80px;
+  right: -80px;
+  animation-delay: 7s;
+}
+
+.clipgen-orb-3 {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  top: 50%;
+  right: 10%;
+  animation-delay: 14s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -30px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+
+/* Header Section */
+.clipgen-header {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 10;
+}
+
+.clipgen-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(139, 92, 246, 0.2);
+  border: 1px solid rgba(139, 92, 246, 0.4);
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  margin-bottom: 2rem;
+}
+
+.clipgen-back-btn:hover {
+  background: rgba(139, 92, 246, 0.3);
+  transform: translateX(-4px);
+  border-color: rgba(139, 92, 246, 0.6);
+}
+
+.clipgen-title-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.clipgen-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(139, 92, 246, 0.4);
+}
+
+.clipgen-icon {
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+
+.clipgen-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.clipgen-subtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0.5rem 0 0 0;
+}
+
+/* Main Content */
+.clipgen-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+/* Input Card */
+.clipgen-input-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 24px;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.clipgen-section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.clipgen-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.clipgen-label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.clipgen-required {
+  color: #ec4899;
+  margin-left: 0.25rem;
+}
+
+.clipgen-input,
+.clipgen-select {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 12px;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.clipgen-input:focus,
+.clipgen-select:focus {
+  outline: none;
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.clipgen-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.clipgen-input:disabled,
+.clipgen-select:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.clipgen-hint {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+
+/* Slider */
+.clipgen-slider-container {
+  margin-top: 1rem;
+}
+
+.clipgen-slider {
+  width: 100%;
+  height: 6px;
+  background: rgba(139, 92, 246, 0.2);
+  border-radius: 10px;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.clipgen-slider::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(139, 92, 246, 0.5);
+}
+
+.clipgen-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 10px rgba(139, 92, 246, 0.5);
+}
+
+.clipgen-slider-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.875rem;
+}
+
+/* Token Cost */
+.clipgen-token-cost {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: rgba(139, 92, 246, 0.15);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.clipgen-token-cost svg {
+  width: 24px;
+  height: 24px;
+  color: #8b5cf6;
+}
+
+.clipgen-token-cost strong {
+  color: #ec4899;
+}
+
+/* Generate Button */
+.clipgen-generate-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+  border: none;
+  border-radius: 14px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.4);
+}
+
+.clipgen-generate-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(139, 92, 246, 0.5);
+}
+
+.clipgen-generate-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.clipgen-generate-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.clipgen-generate-btn.clipgen-loading {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+}
+
+.clipgen-spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Results Section */
+.clipgen-results {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Metadata Card */
+.clipgen-metadata-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.clipgen-metadata-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.clipgen-metadata-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.clipgen-metadata-label {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.clipgen-metadata-value {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+}
+
+.clipgen-highlight {
+  background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Clips Section */
+.clipgen-clips-section {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.clipgen-clips-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Clip Card */
+.clipgen-clip-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.clipgen-clip-card:hover {
+  border-color: rgba(139, 92, 246, 0.5);
+  box-shadow: 0 8px 30px rgba(139, 92, 246, 0.2);
+  transform: translateY(-2px);
+}
+
+.clipgen-clip-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.clipgen-clip-rank {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.clipgen-rank-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.clipgen-clip-id {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.clipgen-virality-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border: 2px solid;
+}
+
+.clipgen-timestamps {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: rgba(139, 92, 246, 0.1);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.clipgen-timestamps svg {
+  width: 18px;
+  height: 18px;
+  color: #8b5cf6;
+}
+
+.clipgen-duration {
+  color: rgba(255, 255, 255, 0.6);
+  margin-left: 0.5rem;
+}
+
+.clipgen-transcript {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border-left: 3px solid #8b5cf6;
+}
+
+.clipgen-transcript-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.5rem;
+}
+
+.clipgen-transcript-text {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.clipgen-caption {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: rgba(236, 72, 153, 0.1);
+  border-radius: 10px;
+  border-left: 3px solid #ec4899;
+  position: relative;
+}
+
+.clipgen-caption-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.5rem;
+}
+
+.clipgen-caption-text {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.clipgen-copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(139, 92, 246, 0.3);
+  border: 1px solid rgba(139, 92, 246, 0.5);
+  border-radius: 8px;
+  color: white;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.clipgen-copy-btn:hover {
+  background: rgba(139, 92, 246, 0.5);
+  transform: scale(1.05);
+}
+
+.clipgen-platforms {
+  margin-top: 1rem;
+}
+
+.clipgen-platforms-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.75rem;
+}
+
+.clipgen-platform-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.clipgen-platform-tag {
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+
+.clipgen-platform-best {
+  background: rgba(139, 92, 246, 0.2);
+  font-weight: 600;
+  border-width: 2px;
+}
+
+.clipgen-no-clips {
+  text-align: center;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 16px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.clipgen-no-clips svg {
+  width: 48px;
+  height: 48px;
+  color: #8b5cf6;
+  margin-bottom: 1rem;
+}
+
+/* Strategy Card */
+.clipgen-strategy-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(236, 72, 153, 0.3);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.clipgen-strategy-section {
+  margin-bottom: 2rem;
+}
+
+.clipgen-strategy-section:last-child {
+  margin-bottom: 0;
+}
+
+.clipgen-strategy-subtitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.clipgen-hashtags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.clipgen-hashtag {
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.3), rgba(236, 72, 153, 0.3));
+  border: 1px solid rgba(139, 92, 246, 0.5);
+  border-radius: 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.clipgen-schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.clipgen-schedule-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(236, 72, 153, 0.3);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.clipgen-schedule-item:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(236, 72, 153, 0.5);
+}
+
+.clipgen-schedule-clip {
+  font-size: 0.875rem;
+  color: #ec4899;
+  font-weight: 600;
+}
+
+.clipgen-schedule-day {
+  font-size: 1rem;
+  color: white;
+  font-weight: 600;
+}
+
+.clipgen-schedule-time {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Notes Card */
+.clipgen-notes-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.clipgen-notes-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.clipgen-notes-text {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .clipgen-title-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .clipgen-title {
+    font-size: 2rem;
+  }
+
+  .clipgen-input-card,
+  .clipgen-metadata-card,
+  .clipgen-clips-section,
+  .clipgen-strategy-card {
+    padding: 1.5rem;
+  }
+
+  .clipgen-metadata-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .clipgen-schedule-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .clipgen-clip-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}
